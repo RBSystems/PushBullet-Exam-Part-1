@@ -1,0 +1,174 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=4.04.01
+  CrossCplrVrs=1.3
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=This Module Send Push Command to a PushBullet Service.\\\\To be||1
+  Cmn2=able to use this module you will need to create a pushbullet account.
+  Cmn3=\\\\Go at https://www.pushbullet.com/\\\\\\Message$: is the message||1
+  Cmn4=you will send to the PushBullet Service.\\\\Response$: Is the response||1
+  Cmn5=you can receiver from the PushBullet Service. Response have been||1
+  Cmn6=uppercase to avoid typing issues.\\\\Parameter:\\\\DeviceName: Is||1
+  Cmn7=The Name you want to assign to the devie in the PushBullet Service.
+  Cmn8=\\DeviceModel: Is the Model of your Crestron Processor.\\Account:
+  Cmn9=||1Is the email address attached to your PusbBullet Account.\\Token:
+  Cmn10=||1Is the key you need to retreiver from Pushbullet under https://www.
+  Cmn11=pushbullet.com/#settings/account\\\\Any device who is connect to||1
+  Cmn12=your Pushbullet service will receive all new message$ from your||1
+  Cmn13=program.\\Any Device who is connected to your Pushbullet service||1
+  Cmn14=can send a response$ to your program.\\\\
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,213,214,215,216,217,225,226,248,249,266,267,310,362,378,380,405,407,408,409,478,522,537,554,586,590,611,624,718,756,767,830,841,842,854,883,955,1032,1062,1079,1128,1129,1134,1140,1157,1158,1195,1199,1220,1221,1222,1223,1299,1348,1349,1439,1472,1473,1499,1746,1803,1975,2229,2354,2514,2523,2532,2706,2707,3235,3236,3427,3454,3567,3568,3601,3602,3708,3902,3903,3912,3918,3925,3926,4206,4207,
+  Exclusions_CDS=5
+  Inclusions_CDS=6
+  Name=PushBullet Gold Certification 2016 Part 1
+  SmplCName=PushBullet Processor.usp
+  Code=1
+  SysRev5=4.000
+  SMWRev=2.02.05
+  InputCue1=[~UNUSED~]
+  InputSigType1=Digital
+  InputCue2=[~UNUSED~]
+  InputSigType2=Digital
+  InputCue3=[~UNUSED~]
+  InputSigType3=Digital
+  InputCue4=[~UNUSED~]
+  InputSigType4=Digital
+  InputCue5=[~UNUSED~]
+  InputSigType5=Digital
+  OutputCue1=[~UNUSED~]
+  OutputSigType1=Digital
+  OutputCue2=[~UNUSED~]
+  OutputSigType2=Digital
+  OutputCue3=[~UNUSED~]
+  OutputSigType3=Digital
+  OutputCue4=[~UNUSED~]
+  OutputSigType4=Digital
+  OutputCue5=[~UNUSED~]
+  OutputSigType5=Digital
+  InputList2Cue1=[~UNUSED~]
+  InputList2SigType1=Serial
+  InputList2Cue2=[~UNUSED~]
+  InputList2SigType2=Serial
+  InputList2Cue3=[~UNUSED~]
+  InputList2SigType3=Serial
+  InputList2Cue4=[~UNUSED~]
+  InputList2SigType4=Serial
+  InputList2Cue5=Message$
+  InputList2SigType5=Serial
+  OutputList2Cue1=[~UNUSED~]
+  OutputList2SigType1=Serial
+  OutputList2Cue2=[~UNUSED~]
+  OutputList2SigType2=Serial
+  OutputList2Cue3=[~UNUSED~]
+  OutputList2SigType3=Serial
+  OutputList2Cue4=[~UNUSED~]
+  OutputList2SigType4=Serial
+  OutputList2Cue5=Response$
+  OutputList2SigType5=Serial
+  ParamCue1=[Reference Name]
+  ParamCue2=DeviceName
+  ParamSigType2=String
+  ParamCue3=DeviceModel
+  ParamSigType3=String
+  ParamCue4=Account
+  ParamSigType4=String
+  ParamCue5=Token
+  ParamSigType5=String
+  MinVariableInputs=5
+  MaxVariableInputs=5
+  MinVariableInputsList2=5
+  MaxVariableInputsList2=5
+  MinVariableOutputs=5
+  MaxVariableOutputs=5
+  MinVariableOutputsList2=5
+  MaxVariableOutputsList2=5
+  MinVariableParams=4
+  MaxVariableParams=4
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  Pp2=2
+  Pp3=3
+  Pp4=4
+  Pp5=5
+  MPp=5
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_PushBullet_Processor
+  SymJam=NonExclusive
+  FileName=PushBullet Processor.ush
+  SIMPLPlusModuleEncoding=0
+  clz1=Pushbullet
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=2
+  Tp=1
+  SD=The Name for your Device in PushBullet.
+  HD=True
+  DV=MyProcessor
+  NoS=False
+  VVS=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=3
+  Tp=1
+  SD=The Model name of your Crestron Processor.
+  HD=True
+  DV=MyProcessorModel
+  NoS=False
+  VVS=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=4
+  Tp=1
+  SD=The PushBullet Account.
+  HD=True
+  DV=
+  NoS=False
+  VVS=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=5
+  Tp=1
+  SD=The Token provided by your PushBullet Account.
+  HD=True
+  DV=
+  NoS=False
+  VVS=0
+[END]
